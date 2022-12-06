@@ -25,11 +25,17 @@
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
 
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
 </head>
 
 <body>
@@ -48,42 +54,44 @@
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
                 <a href="" class="navbar-brand p-0">
                     <!-- <h1 class="text-primary m-0"><i class="fa fa-utensils me-3"></i>Restoran</h1> -->
-                    <!-- <img src="img/logo.png" alt="Logo"> -->
                     <img class="img-fluid" src="img/asiaeuro1.png" alt="Logo">
+                    <!-- <h1 class="text-primary m-0"><i class="fa fa-utensils me-3"></i> <span style="color: rgb(73, 73, 252);" >Euro</span><span style="color: red;">Asia</span></h1> -->
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="fa fa-bars"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class=" navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto py-0 pe-4">
-                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
                         <a href="about.html" class="nav-item nav-link">About</a>
-                        <a href="service.html" class="nav-item nav-link">Service</a>
+                        <a href="categories.html" class="nav-item nav-link">Categories</a>
                         <a href="menu.html" class="nav-item nav-link">Menu</a>
-                        <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Pages</a>
+                        <!-- <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                             <div class="dropdown-menu m-0">
-                                <a href="booking.html" class="dropdown-item active">Booking</a>
-                                <!-- <a href="team.html" class="dropdown-item">Our Team</a> -->
+                                <a href="booking.html" class="dropdown-item">Booking</a>
+                                
                                 <a href="testimonial.html" class="dropdown-item">Testimonial</a>
                             </div>
-                        </div>
-                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        </div> -->
+                        <!-- <a href="contact.html" class="nav-item nav-link">Contact</a> -->
                     </div>
-                    <a href="booking.html" class="btn btn-primary py-2 px-4">Book A Table</a>
+                    <a href="booking.html" class="btn btn-primary py-2 px-4">Get a Reservation</a>
                 </div>
             </nav>
 
             <div class="container-xxl py-5 bg-dark hero-header mb-5">
-                <div class="container text-center my-5 pt-5 pb-4">
-                    <h1 class="display-3 text-white mb-3 animated slideInDown">Booking</h1>
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb justify-content-center text-uppercase">
-                            <li class="breadcrumb-item"><a href="#">Home</a></li>
-                            <li class="breadcrumb-item"><a href="#">Pages</a></li>
-                            <li class="breadcrumb-item text-white active" aria-current="page">Booking</li>
-                        </ol>
-                    </nav>
+                <div class="container my-5 py-5">
+                    <div class="row align-items-center g-5">
+                        <div class="col-lg-6 text-center text-lg-start">
+                            <h1 class="display-3 text-white animated slideInLeft">Enjoy Our<br>Delicious Meal</h1>
+                            <p class="text-white animated slideInLeft mb-4 pb-2">Tayo na sa euro-asia Mura na Masarap pa at abot kaya pa ng bulsa</p>
+                            <a href="booking.html" class="btn btn-primary py-sm-3 px-sm-5 me-3 animated slideInLeft">Book A Table</a>
+                        </div>
+                        <div class="col-lg-6 text-center text-lg-end overflow-hidden">
+                            <img class="img-fluid" src="img/hero-wheel.png" alt="">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -91,85 +99,100 @@
 
 
         <!-- Reservation Start -->
-        <div class="container-xxl py-5 px-0 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="row g-0">
-                <div class="col-md-6" style="margin-top: 50px;">
-                    <video allowfullscreen width="650px" autoplay>
-                        <source src="video/euro-asia-video.mp4" type="video/mp4">
-                    </video>
-                    <!-- <div class="video">
-                        <button type="button" class="btn-play" data-bs-toggle="modal" data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-bs-target="#videoModal">
-                            <span></span>
-                        </button>
-                        
-                    </div> -->
-                </div>
-                <div class="col-md-6 bg-dark d-flex align-items-center">
-                    <div class="p-5 wow fadeInUp" data-wow-delay="0.2s">
-                        <h5 class="section-title ff-secondary text-start text-primary fw-normal">Reservation</h5>
-                        <h1 class="text-white mb-4">Book A Table Online</h1>
-                        <form>
-                            <div class="row g-3">
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" id="name" placeholder="Your Name">
-                                        <label for="name">Your Name</label>
-                                    </div>
+        <div class="container w-full px-5 py-6 mx-auto">
+            <div class="flex items-center min-h-screen bg-gray-50">
+                <div class="flex-1 h-full max-w-4xl mx-auto bg-white rounded-lg shadow-xl">
+                    <div class="flex flex-col md:flex-row">
+                        <div class="h-32 md:h-auto md:w-1/2">
+                            <img class="object-fill w-full h-full"
+                                src="./img/euro1.jpg" alt="img" />
+                        </div>
+                        <div class="flex items-center justify-center p-6 sm:p-12 md:w-1/2">
+                            <div class="w-full">
+                                <h3 class="mb-4 text-xl font-bold text-blue-600">Make Reservation</h3>
+    
+                                <div class="w-full bg-gray-200 rounded-full">
+                                    <div
+                                        class="w-40 p-1 text-xs font-medium leading-none text-center text-blue-100 bg-blue-600 rounded-full">
+                                        Step1</div>
                                 </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="email" class="form-control" id="email" placeholder="Your Email">
-                                        <label for="email">Your Email</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating date" id="date3" data-target-input="nearest">
-                                        <input type="text" class="form-control datetimepicker-input" id="datetime" placeholder="Date & Time" data-target="#date3" data-toggle="datetimepicker" />
-                                        <label for="datetime">Date & Time</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <select class="form-select" id="select1">
-                                          <option value="1">People 1</option>
-                                          <option value="2">People 2</option>
-                                          <option value="3">People 3</option>
-                                        </select>
-                                        <label for="select1">No Of People</label>
-                                      </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-floating">
-                                        <textarea class="form-control" placeholder="Special Request" id="message" style="height: 100px"></textarea>
-                                        <label for="message">Special Request</label>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <button class="btn btn-primary w-100 py-3" type="submit">Book Now</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
+    
+                                <form >
+                                    
+                                    <div class="sm:col-span-6">
+                                        <label for="first_name" class="block text-sm font-medium text-gray-700"> First Name
+                                        </label>
+                                        <div class="mt-1">
+                                            <input type="text" id="first_name" name="first_name"
+                                                
+                                                class="block w-full appearance-none bg-white border border-gray-400 rounded-md py-2 px-3 text-base leading-normal transition duration-150 ease-in-out sm:text-sm sm:leading-5" />
+                                        </div>
 
-        <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content rounded-0">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Youtube Video</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        
-                        <div class="ratio ratio-16x9">
-                            <iframe class="embed-responsive-item" src="" id="video" allowfullscreen allowscriptaccess="always"
-                                allow="autoplay"></iframe>
+                                    </div>
+                                    <div class="sm:col-span-6">
+                                        <label for="last_name" class="block text-sm font-medium text-gray-700"> Last Name
+                                        </label>
+                                        <div class="mt-1">
+                                            <input type="text" id="last_name" name="last_name"
+                                                
+                                                class="block w-full appearance-none bg-white border border-gray-400 rounded-md py-2 px-3 text-base leading-normal transition duration-150 ease-in-out sm:text-sm sm:leading-5" />
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="sm:col-span-6">
+                                        <label for="email" class="block text-sm font-medium text-gray-700"> Email </label>
+                                        <div class="mt-1">
+                                            <input type="email" id="email" name="email"
+                                                
+                                                class="block w-full appearance-none bg-white border border-gray-400 rounded-md py-2 px-3 text-base leading-normal transition duration-150 ease-in-out sm:text-sm sm:leading-5" />
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="sm:col-span-6">
+                                        <label for="tel_number" class="block text-sm font-medium text-gray-700"> Phone
+                                            number
+                                        </label>
+                                        <div class="mt-1">
+                                            <input type="text" id="tel_number" name="tel_number"
+                                                
+                                                class="block w-full appearance-none bg-white border border-gray-400 rounded-md py-2 px-3 text-base leading-normal transition duration-150 ease-in-out sm:text-sm sm:leading-5" />
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="sm:col-span-6">
+                                        <label for="res_date" class="block text-sm font-medium text-gray-700"> Reservation
+                                            Date
+                                        </label>
+                                        <div class="mt-1">
+                                            <input type="datetime-local" id="res_date" name="res_date"
+                                               
+                                                class="block w-full appearance-none bg-white border border-gray-400 rounded-md py-2 px-3 text-base leading-normal transition duration-150 ease-in-out sm:text-sm sm:leading-5" />
+                                        </div>
+                                        <span class="text-xs">Please choose the time between 17:00-23:00.</span>
+                                        
+                                    </div>
+                                    <div class="sm:col-span-6">
+                                        <label for="guest_number" class="block text-sm font-medium text-gray-700"> Guest
+                                            Number
+                                        </label>
+                                        <div class="mt-1">
+                                            <input type="number" id="guest_number" name="guest_number"
+                                                value="{{ $reservation->guest_number ?? '' }}"
+                                                class="block w-full appearance-none bg-white border border-gray-400 rounded-md py-2 px-3 text-base leading-normal transition duration-150 ease-in-out sm:text-sm sm:leading-5" />
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="mt-6 p-4 flex justify-end">
+                                        <button type="submit"
+                                            class="px-4 py-2 bg-indigo-500 hover:bg-indigo-700 rounded-lg text-white">Next</button>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+    
         </div>
         <!-- Reservation Start -->
         
@@ -192,18 +215,21 @@
                         <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>050 702 4820</p>
                         <p class="mb-2"><i class="fa fa-envelope me-3"></i>euro-asia@yahoo.com</p>
                         <div class="d-flex pt-2">
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                            <a target="_blank" class="btn btn-outline-light btn-social" href="
+                            https://www.facebook.com/profile.php?id=100088528235084"><i class="fab fa-facebook-f"></i></a>
+                            <a target="_blank" class="btn btn-outline-light btn-social" href="https://www.facebook.com/profile.php?id=100088528235084"><i class="fa-brands fa-facebook-messenger"></i></a>
+                            <a target="_blank" class="btn btn-outline-light btn-social" href=""><i class="fab fa-tiktok"></i></a>
+                            <a target="_blank" class="btn btn-outline-light btn-social" href="https://call.whatsapp.com/video/hfOdljNT8RIzMC0d3kMv2v"><i class="fa-brands fa-whatsapp"></i></a>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Opening</h4>
                         <h5 class="text-light fw-normal">Monday - Sunday</h5>
-                        <p>6:00 AM - 12:00 AM</p>
-                        <!-- <h5 class="text-light fw-normal">Sunday</h5>
-                        <p>10AM - 08PM</p> -->
+                        <p>6:30 AM - 11:30 PM</p>
+                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Message Us</h4>
+                        <div class="d-flex flex-column">
+                            <a target="_blank" href="https://call.whatsapp.com/video/hfOdljNT8RIzMC0d3kMv2v" class="btn btn-primary py-2 px-4">Whatsapp</a>
+                        </div>    
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Hiring Delivery Rider</h4>
@@ -212,6 +238,9 @@
                             <input class="form-control border-primary w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
                             <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
                         </div> -->
+                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Advance Order</h4>
+                        <p>Advance  order  & deliver  pls Call  this number  or message  in what's up.</p>
+                        <p>0506249275 / 0507024820</p>
                     </div>
                 </div>
             </div>
