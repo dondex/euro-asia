@@ -36,7 +36,17 @@
 
     <!-- Tailwind CDN -->
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+
+    <!-- CDN Isotopes Plugin -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+
 </head>
+
+<style>
+    .menu .menu-btn button:hover{
+        color: #fff !important;
+    }
+</style>
 
 <body>
     <div class="container-xxl bg-white p-0">
@@ -64,7 +74,7 @@
                     <div class="navbar-nav ms-auto py-0 pe-4">
                         <a href="index.html" class="nav-item nav-link active">Home</a>
                         <a href="about.html" class="nav-item nav-link">About</a>
-                        <a href="" class="nav-item nav-link">Categories</a>
+                        <a href="categories.html" class="nav-item nav-link">Categories</a>
                         <a href="menu.html" class="nav-item nav-link">Menu</a>
                         <!-- <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
@@ -100,14 +110,25 @@
 
         <!-- Menu Start -->
         <div class="container-xxl pt-5 pb-3">
-            <div class="container">
+            <div class="container menu">
                 <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                    <h5 class="section-title ff-secondary text-center text-primary fw-normal">Special Menu</h5>
+                    <h5 class="section-title ff-secondary text-center text-primary fw-normal">Our Menu</h5>
                     <h1 class="mb-5">Mura na Masarap pa!</h1>
                 </div>
-                <div class="row g-4">
+                <div class="row my-5 button-group filter-button-group">
+                    <div class="d-flex justify-content-center menu-btn">
+                        <button type="button" data-filter="*" class="btn btn-primary py-2 px-4 mx-2 " style="color: #FEA116;">All</button>
+                        <button type="button" data-filter="filipino" class="btn btn-primary py-2 px-4 mx-2 " style="color: #FEA116;">Filipino</button>
+                        <button type="button" data-filter="italian" class="btn btn-primary py-2 px-4 mx-2 " style="color: #FEA116;">Italian</button>
+                        <button type="button" data-filter="french" class="btn btn-primary py-2 px-4 mx-2 " style="color: #FEA116;">French</button>
+                        <button type="button" data-filter="thailand" class="btn btn-primary py-2 px-4 mx-2 " style="color: #FEA116;">Thailand</button>
+                        <button type="button" data-filter="japanese" class="btn btn-primary py-2 px-4 mx-2 " style="color: #FEA116;">Japanese</button>
+                        <button type="button" data-filter="korean" class="btn btn-primary py-2 px-4 mx-2 " style="color: #FEA116;">Korean</button>
+                    </div>
+                </div>
+                <div class="row g-4" id="menu-list">
                     
-                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="col-lg-3 col-md-6 wow fadeInUp filipino" data-wow-delay="0.1s">
                             <div class="team-item text-center rounded overflow-hidden">
                                 <div class="rounded-circle overflow-hidden m-4">
                                     <img class="img-fluid" style="width: 250px; height: 250px;" src="./img/ph-1.png" alt="">
@@ -126,7 +147,7 @@
                             </div>
                         </div>
 
-                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="col-lg-3 col-md-6 wow fadeInUp filipino" data-wow-delay="0.1s">
                             <div class="team-item text-center rounded overflow-hidden">
                                 <div class="rounded-circle overflow-hidden m-4">
                                     <img class="img-fluid" style="width: 250px; height: 250px;" src="./img/ph-2.png" alt="">
@@ -145,7 +166,7 @@
                             </div>
                         </div>
 
-                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="col-lg-3 col-md-6 wow fadeInUp italian" data-wow-delay="0.1s">
                             <div class="team-item text-center rounded overflow-hidden">
                                 <div class="rounded-circle overflow-hidden m-4">
                                     <img class="img-fluid" style="width: 250px; height: 250px;" src="./img/ph-3.png" alt="">
@@ -165,7 +186,7 @@
                             </div>
                         </div>
 
-                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="col-lg-3 col-md-6 wow fadeInUp french" data-wow-delay="0.1s">
                             <div class="team-item text-center rounded overflow-hidden">
                                 <div class="rounded-circle overflow-hidden m-4">
                                     <img class="img-fluid" style="width: 250px; height: 250px;" src="./img/ph-4.png" alt="">
@@ -185,7 +206,7 @@
                             </div>
                         </div>
 
-                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="col-lg-3 col-md-6 wow fadeInUp japanese" data-wow-delay="0.1s">
                             <div class="team-item text-center rounded overflow-hidden">
                                 <div class="rounded-circle overflow-hidden m-4">
                                     <img class="img-fluid" style="width: 250px; height: 250px;" src="./img/ph-5.png" alt="">
@@ -206,7 +227,7 @@
                             </div>
                         </div>
 
-                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="col-lg-3 col-md-6 wow fadeInUp korean" data-wow-delay="0.1s">
                             <div class="team-item text-center rounded overflow-hidden">
                                 <div class="rounded-circle overflow-hidden m-4">
                                     <img class="img-fluid" style="width: 250px; height: 250px;" src="./img/ph-6.png" alt="">
@@ -227,7 +248,7 @@
                             </div>
                         </div>
 
-                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="col-lg-3 col-md-6 wow fadeInUp thailand" data-wow-delay="0.1s">
                             <div class="team-item text-center rounded overflow-hidden">
                                 <div class="rounded-circle overflow-hidden m-4">
                                     <img class="img-fluid" style="width: 250px; height: 250px;" src="./img/ph-7.png" alt="">
@@ -247,7 +268,7 @@
                             </div>
                         </div>
 
-                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="col-lg-3 col-md-6 wow fadeInUp japanese" data-wow-delay="0.1s">
                             <div class="team-item text-center rounded overflow-hidden">
                                 <div class="rounded-circle overflow-hidden m-4">
                                     <img class="img-fluid" style="width: 250px; height: 250px;" src="./img/ph-9.png" alt="">
@@ -361,8 +382,9 @@
     <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
     <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
 
+    
     <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
